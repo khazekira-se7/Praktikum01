@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza-HOT Order</title>
+</head>
+<body>
+    <h1>Pizza-HOT ┃ Delivery </h1>
+    <p>Pizza-Kun menyediakan Pizza sesuai dengan keinginan anda dengan harga terjangkau</p>
+    <form action="http://blackgoosebistro.com/pizza.php" method="post">
+        <fieldset>
+            <legend>Data Diri Anda</legend>
+            <br>
+            <ul>
+                <li><label for="customername">Nama :</label><input type="text" name="customername" size="40"></li>
+                <li><label for="address">Alamat :</label><input type="text" name="address" size="39,999"/></li>
+                <li><label for="telephone">No Telp :</label><input type="text" name="telephone" size="39"></li>
+                <li><label for="email">Email :</label><input type="text" name="email" size="41"/></li>
+                <li><label for="instructions">Instruksi Pemesanan</label> <br> <textarea placeholder="Tidak lebih dari 400 karakter" maxlength="400" id="instructions" name="instructions" cols="47,5" rows="4"></textarea></li>
+            </ul>
+        <h2>Pilih topping Pizza yang kamu inginkan :</h2>
+        <p>Spesifikasi Pizza </p>
+        <br>
+        <p>Pinggiran Pizza (<i>Pilih Satu</i>):</p>
+        <ul style="list-style: none;">
+            <li><input type="radio" name="crust" value="pizzabianca">Pizza Bianca</li>
+            <li><input type="radio" name="crust" value="multigrain">Multigrain</li>
+            <li><input type="radio" name="crust" value="isikeju">Pinggiran Berisi Keju</li>
+            <li><input type="radio" name="crust" value="bebasgula">Bebas Gula</li>
+        </ul>
+        <p>Topping (<i>Pilih Sesuka Hati</i>)</p>
+        <ul style="list-style: none;">
+            <li><input type="checkbox" id="toppings1" name="toppings1" value="sausmerah" required>
+                <label for="toppings1">Saus Merah</label><br></li>
+            <li><input type="checkbox" id="toppings2" name="toppings2" value="sausputih">
+                <label for="toppings2">Saus Putih</label><br></li>
+            <li><input type="checkbox" id="toppings3" name="toppings3" value="kejumozzarella">
+                <label for="toppings3">Keju Mozzarella</label><br></li>
+            <li><input type="checkbox" id="toppings4" name="toppings4" value="Pepperoni">
+                <label for="toppings4">Pepperoni</label><br></li>
+            <li><input type="checkbox" id="toppings5" name="toppings5" value="Jamur">
+                <label for="toppings5">Jamur</label><br></li>
+            <li><input type="checkbox" id="toppings6" name="toppings6" value="ikanteri">
+                <label for="toppings6">Ikan Teri</label><br></li>
+        </ul>
+        <p>Jumlah <br><label>Berapa banyak pizza<input type="number" name="pizza" placeholder="0" min="1" max="6"></label></p>
+        <br>
+        <input type="submit" value="Submit">    <input type="reset" value="reset">
+        </fieldset>
+    </form>
+
+</body>
+</html>
