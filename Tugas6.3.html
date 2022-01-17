@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>praktikum 6.3</title>
+    <style>
+        body {
+            min-height: 100vh;
+            flex-direction: column;
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: rgb(233, 150, 164);
+            text-align: center;
+            
+        }
+        header, footer{
+            background-color: turquoise;
+            height: 10vh;
+
+        }
+        .main{
+            display: flex;
+            margin: 30px 0px;
+            height: 70vh;
+
+
+        }
+        .main > aside {
+            flex: 1;
+            background-color: rgb(75, 179, 179);
+
+        }
+        .main > article {
+            flex: 3;
+            background-color: blueviolet;
+            margin-left: 20px;
+        }
+        .art {
+            margin-right: 40px;
+            position: absolute;
+            top: 50%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <div class="main">
+        <aside>Aside</aside>
+        <article>
+            <p>Article</p>
+            <div class="art">
+                <img src="https://www.duniailkom.com/wp-content/uploads/2015/11/HTML-featured-duniailkom.png" alt="" width="25%">
+                <img src="https://www.duniailkom.com/wp-content/uploads/2015/11/HTML-featured-duniailkom.png" alt="" width="25%">
+                <img src="https://www.duniailkom.com/wp-content/uploads/2015/11/HTML-featured-duniailkom.png" alt="" width="25%">
+            </div>
+
+        </article>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
